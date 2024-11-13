@@ -35,13 +35,15 @@
         }
         section {
             margin-bottom: 2rem;
+            display: flex; /* Usamos flexbox para la alineación */
+            justify-content: center;
+            align-items: center;
+            gap: 2rem; /* Espacio entre la imagen y el texto */
         }
         img {
-            width: 100%;
-            max-width: 500px; /* Máximo tamaño de la imagen */
-            height: auto;
+            max-width: 300px; /* Tamaño máximo de la imagen */
+            height: auto;  /* Mantener la proporción */
             display: block;
-            margin: 0 auto 1rem;
         }
         footer {
             background-color: #333;
@@ -49,6 +51,16 @@
             text-align: center;
             padding: 1rem;
             position: relative; /* Lo hace parte del flujo normal del documento */
+        }
+        /* Para dispositivos pequeños */
+        @media (max-width: 768px) {
+            section {
+                flex-direction: column; /* En pantallas pequeñas, apilamos la imagen y el texto */
+                text-align: center; /* Centramos el texto */
+            }
+            img {
+                max-width: 100%; /* Las imágenes ocuparán el 100% del ancho disponible */
+            }
         }
     </style>
 </head>
@@ -67,38 +79,47 @@
 
     <main>
         <section id="biografia">
-            <h2>Biografía</h2>
-            <img src="https://i.postimg.cc/BbtbCFTv/martin-garrix-poison-free-download.jpg" alt="Martin Garrix en una presentación">
-            <p>Martin Garrix, cuyo nombre real es Martijn Gerard Garritsen, nació el 14 de mayo de 1996 en Amstelveen, Países Bajos. Desde muy joven mostró interés por la música, especialmente en la producción musical y el DJing, influenciado por artistas como Tiësto. A los 17 años, lanzó su primer éxito mundial "Animals", que lo catapultó a la fama internacional.</p>
+            <img src="https://i.postimg.cc/QtK1Xvzm/ab6761610000e5eb45c3688488f871aace7a4a57.jpg" alt="Martin Garrix en una presentación"  width="200px" height="auto" display="block">
+            <div>
+                <h2>Biografía</h2>
+                <p>Martin Garrix, cuyo nombre real es Martijn Gerard Garritsen, nació el 14 de mayo de 1996 en Amstelveen, Países Bajos. Desde muy joven mostró interés por la música, especialmente en la producción musical y el DJing, influenciado por artistas como Tiësto. A los 17 años, lanzó su primer éxito mundial "Animals", que lo catapultó a la fama internacional.</p>
+            </div>
         </section>
 
         <section id="trayectoria">
-            <h2>Trayectoria</h2>
             <img src="https://i.postimg.cc/ZKGnrCCT/f960x540-227722-301797-5050.jpg" alt="Martin Garrix en un concierto en vivo">
-            <p>Conocido por su habilidad para mezclar géneros y crear éxitos mundiales, Garrix ha colaborado con algunos de los nombres más importantes de la música, como Usher, Dua Lipa y David Guetta. Además, ha sido cabeza de cartel en algunos de los festivales de música electrónica más grandes del mundo, como Tomorrowland y Ultra Music Festival.</p>
+            <div>
+                <h2>Trayectoria</h2>
+                <p>Conocido por su habilidad para mezclar géneros y crear éxitos mundiales, Garrix ha colaborado con algunos de los nombres más importantes de la música, como Usher, Dua Lipa y David Guetta. Además, ha sido cabeza de cartel en algunos de los festivales de música electrónica más grandes del mundo, como Tomorrowland y Ultra Music Festival.</p>
+            </div>
         </section>
 
         <section id="premios">
-            <h2>Premios</h2>
             <img src="https://i.postimg.cc/qRvvkKZG/Martin-Garrix-MTV-EMA-2016.jpg" alt="Martin Garrix recibiendo un premio">
-            <p>A lo largo de su carrera, Martin Garrix ha recibido numerosos premios y reconocimientos, incluyendo:</p>
-            <ul>
-                <li>Varias veces galardonado como el DJ número 1 del mundo por la revista DJ Mag.</li>
-                <li>MTV Europe Music Awards en la categoría de Mejor Acto Electrónico.</li>
-                <li>NRJ Music Awards por Mejor Colaboración Internacional.</li>
-            </ul>
+            <div>
+                <h2>Premios</h2>
+                <p>A lo largo de su carrera, Martin Garrix ha recibido numerosos premios y reconocimientos, incluyendo:</p>
+                <ul>
+                    <li>Varias veces galardonado como el DJ número 1 del mundo por la revista DJ Mag.</li>
+                    <li>MTV Europe Music Awards en la categoría de Mejor Acto Electrónico.</li>
+                    <li>NRJ Music Awards por Mejor Colaboración Internacional.</li>
+                </ul>
+            </div>
         </section>
 
         <section id="discografia">
-            <h2>Discografía</h2>
-            <img src="https://i.postimg.cc/L4VGt75h/0x1900-000000-80-0-0.jpg" alt="Carátulas de los sencillos de Martin Garrix">
-            <p>Algunos de sus sencillos más destacados incluyen:</p>
-            <ul>
-                <li>"Animals" (2013)</li>
-                <li>"Don't Look Down" feat. Usher (2015)</li>
-                <li>"Scared to Be Lonely" con Dua Lipa (2017)</li>
-                <li>"In the Name of Love" con Bebe Rexha (2016)</li>
-            </ul>
+            <img src="https://i.postimg.cc/L4VGt75h/0x1900-000000-80-0-0.jpg" alt="Carátulas de los sencillos de Martin Garrix" width="200px" height="auto" display="block">
+            <div>
+                <h2>Discografía</h2>
+                <p>Algunos de sus sencillos más destacados incluyen:</p>
+                <ul>
+                    <li>"Animals" (2013)</li>
+                    <li>"Don't Look Down" feat. Usher (2015)</li>
+                    <li>"Scared to Be Lonely" con Dua Lipa (2017)</li>
+                    <li>"In the Name of Love" con Bebe Rexha (2016)</li>
+                    <li>"High On Life" con Bonn (2018)</li>
+                </ul>
+            </div>
         </section>
     </main>
 
