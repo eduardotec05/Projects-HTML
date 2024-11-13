@@ -14,11 +14,16 @@ Este es un proyecto simple en HTML que presenta una página web sobre la biograf
 2. **Trayectoria**: Detalles sobre su carrera y colaboraciones musicales.
 3. **Premios**: Lista de algunos de los premios y reconocimientos más importantes que ha recibido.
 4. **Discografía**: Sencillos más destacados de su carrera.
+5. **Colaboraciones**: Agregue algunas de sus colaboraciones más importantes.
+6. **Filantropía**: Eventos beneficos que ha echo a lo largo de su vida.
 
-## Captura de pantalla 📸
+## Captura de pantalla del código📸
 
-![Captura de la página sobre Martin Garrix]([https://example.com/screenshot.jpg](https://i.postimg.cc/J426KWL7/Captura-de-pantalla-2024-11-10-234307.png))
+![Captura de la página sobre Martin Garrix](https://i.postimg.cc/BtW47QkH/Captura-de-pantalla-2024-11-12-204343.png)
 
+## Captura de pantalla de la página 📸
+
+![Captura de la página sobre Martin Garrix](https://i.postimg.cc/dQgCcRKm/Captura-de-pantalla-2024-11-12-204557.png)
 ## Cómo clonar este repositorio 🔧
 
 Si deseas tener este proyecto en tu máquina local, sigue estos pasos:
